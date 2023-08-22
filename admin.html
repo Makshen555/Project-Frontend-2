@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página del Administrador</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <h1>Bienvenido, Administrador</h1>
+  <button onclick="logOut()">Log Out</button>
+  <div id="users-container"></div> <!-- Contenedor para mostrar los usuarios -->
+  <div id="verification-message"></div> <!-- Contenedor para mostrar el mensaje de espera -->
+  <div id="editDiv" style="display: none;">
+    <input id="newEmail">
+    <input id="newName">
+    <label id="curentID"></label>
+    <button id="guardar" onclick="updateUser()">Guardar</button>
+  </div>
+  <button onclick="goCreateUser()">Crear usuarios</button>
+  
+
+  <!-- Contenido específico para el administrador -->
+  <script src="./js/admin.js"></script>
+</body>
+</html>
